@@ -50,6 +50,7 @@ a { text-decoration: none; color: dimgray; }
 @media only screen and (max-width : 479px) {
     html, body { font-size: 7px; }
     #container { width: 90%; }
+    #contents .box span:before { top: 12px; }
     .profile-img {
         width: 35%;
         box-shadow: 3px 5px 6px 1px gray;
@@ -61,6 +62,7 @@ a { text-decoration: none; color: dimgray; }
 @media only screen and (min-width : 481px) and (max-width : 896px) {
     html, body { font-size: 7px; }
     #container { width: 90%; }
+    #contents .box span:before { top: 12px; }
     .profile-img {
         width: 20%;
         box-shadow: 3px 5px 6px 1px gray;
