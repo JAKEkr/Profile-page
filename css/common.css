@@ -1,3 +1,5 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
 html, body {
     margin: 0;
     padding: 0;
@@ -5,8 +7,17 @@ html, body {
     height: 100%;
     text-align: center;
     font-size: 10px;
-    font-family: "Droid Sans Mono", Consolas, "Courier New", "Liberation Mono", monospace;
     color: #333030;
+    
+    @font-face {
+        font-family: "Droid Sans Mono", Consolas, "Courier New", "Liberation Mono", monospace;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: "NotoSansKR", sans-seri;
+        unicode-range: U+0020-007E;
+        font-style: normal;
+    }
 }
 
 #container { width: 50%; height: 100vh; margin: 0 auto; display: table; }
