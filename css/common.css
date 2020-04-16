@@ -35,7 +35,8 @@ header {
 #contents .box:nth-of-type(even) { padding-left: 50%; text-align: left; }
 #contents .box:nth-of-type(even) span { padding-left: 50px; }
 #contents .box:nth-of-type(even) span:before { left: -3px; }
-#connections { position: relative; padding: 25px 0; word-spacing:20px; }
+#connections { position: relative; padding: 25px 0;}
+#connections > a { margin: 0 12px; }
 
 footer {
     width: 100%;
@@ -48,59 +49,49 @@ footer #copy { font-size: 1.2rem; }
 
 a { text-decoration: none; color: dimgray; }
 
+.profile-img {
+    box-shadow: 3px 5px 6px 1px gray;
+    border-radius: 70%;
+}
+
 /* Smartphone (portrait) */
 @media only screen and (max-width : 480px) {
-    html, body { font-size: 7px; }
+    html, body { font-size: 6px; }
     #container { width: 90%; }
-    #contents .box span:before { top: 12px; }
+    #contents .box span:before { top: 12px; width: 5px; height: 5px; }
     #contents .box:nth-of-type(odd) span{ padding-right: 35px; }
+    #contents .box:nth-of-type(odd) span:before{ right: -3px; }
     #contents .box:nth-of-type(even) span { padding-left: 35px; }
-    .profile-img {
-        width: 35%;
-        box-shadow: 3px 5px 6px 1px gray;
-        border-radius: 70%;
-    }
+    #contents .box:nth-of-type(even) span:before { left: -2px; }
+    .profile-img { width: 35%; }
 }
 
 /* Smartphone (landscape) */
 @media only screen and (min-width : 481px) and (max-width : 895px) {
-    html, body { font-size: 7px; }
+    html, body { font-size: 6px; }
     #container { width: 90%; }
-    #contents .box span:before { top: 12px; }
-    .profile-img {
-        width: 20%;
-        box-shadow: 3px 5px 6px 1px gray;
-        border-radius: 70%;
-    }
+    #contents .box span:before { top: 12px; width: 5px; height: 5px; }
+    #contents .box:nth-of-type(odd) span:before{ right: -3px; }
+    #contents .box:nth-of-type(even) span:before { left: -2px; }
+    .profile-img { width: 20%; }
 }
 
 /* Tablet (portrait) */
 @media only screen and (min-device-width : 896px) and (max-device-width : 1024px) and (orientation : portrait) {
     #container { width: 80%; }
-    .profile-img {
-        width: 25%;
-        box-shadow: 3px 5px 6px 1px gray;
-        border-radius: 70%;
-    }
+    .profile-img { width: 25%; }
 }
 
 /* Tablet (landscape) */
 @media only screen and (min-device-width : 896px) and (max-device-width : 1024px) and (orientation : landscape) {
-    .profile-img {
-        width: 25%;
-        box-shadow: 3px 5px 6px 1px gray;
-        border-radius: 70%;
-    }
+    #container { width: 80%; }
+    .profile-img { width: 25%; }
 }
 
 /* Desktop and laptop */
 @media only screen and (min-width : 1025px) {
     #container { width: 50%; }
-    .profile-img {
-        width: 25%;
-        box-shadow: 3px 5px 6px 1px gray;
-        border-radius: 70%;
-    }
+    .profile-img { width: 25%; }
 }
 
 #container {
